@@ -1,0 +1,15 @@
+ There are 	2 ways to define XML view in controller
+ 
+ "sap.ui.demo.thinh" is resource roots.  data-sap-ui-resourceroots='{"sap.ui.demo.thinh": "./"}'
+  
+  new XMLView({
+	 	viewName: "sap.ui.demo.thinh.view.App"
+	 }).placeAt("content");
+   
+   ///////////
+   
+	XMLView.create({
+		viewName: "sap.ui.demo.thinh.view.App"
+	}).then(function(oView){
+		oView.placeAt("content");
+	});
